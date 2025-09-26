@@ -11,8 +11,11 @@ Comparison :
 | GRU | ![GRU](assets/GRUV.png) | ![minGRU](assets/GRUV2.png) |
 | LSTM | ![LSTM](assets/LSTMV.png) | ![minLSTM](assets/LSTMV2.png) |
 
-see more details in code :
-[implementation details](implementation_details.ipynb)
+See more details in code :
+
+[GRU implementation details](gru_coded_details.ipynb)
+
+[LSTM implementation details](lstm_coded_details.ipynb)
 
 ## References
 
