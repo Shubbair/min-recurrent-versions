@@ -16,7 +16,7 @@ def gru_tests(model1, model2):
     out_gru, h_n_gru = gru(x)
     end_time = time.time()
 
-    print(f"[{model1.__name__}] Time taken: {end_time - start_time:.6f} seconds")
+    # print(f"[{model1.__name__}] Time taken: {end_time - start_time:.6f} seconds")
 
 
     # Time the custom cell
@@ -29,7 +29,7 @@ def gru_tests(model1, model2):
         outputs.append(h.unsqueeze(1))
     out_custom = torch.cat(outputs, dim=1)
     end_time = time.time()
-    print(f"[recoded {model2.__name__}] Time taken: {end_time - start_time:.6f} seconds")
+    # print(f"[recoded {model2.__name__}] Time taken: {end_time - start_time:.6f} seconds")
 
     # Check if shapes match
     assert out_gru.shape == out_custom.shape, "Output shapes do not match!"
@@ -55,7 +55,7 @@ def lstm_tests(model1, model2):
     out_lstm, (h_n_lstm, c_n_lstm) = lstm(x)
     end_time = time.time()
 
-    print(f"[{model1.__name__}] Time taken: {end_time - start_time:.6f} seconds")
+    # print(f"[{model1.__name__}] Time taken: {end_time - start_time:.6f} seconds")
 
     # Time the custom cell
     cell = model2(input_dim, hidden_dim)
@@ -67,7 +67,7 @@ def lstm_tests(model1, model2):
         outputs.append(h.unsqueeze(1))
     out_custom = torch.cat(outputs, dim=1)
     end_time = time.time()
-    print(f"[recoded {model2.__name__}] Time taken: {end_time - start_time:.6f} seconds")
+    # print(f"[recoded {model2.__name__}] Time taken: {end_time - start_time:.6f} seconds")
 
     # Check if shapes match
     assert out_lstm.shape == out_custom.shape, "Output shapes do not match!"
