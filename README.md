@@ -19,4 +19,4 @@ See more details in code :
 
 ## References
 
-[`Were RNN Is All We Needed`](https://arxiv.org/pdf/2410.01201)
+Paper : [`Were RNN Is All We Needed`](https://arxiv.org/pdf/2410.01201)
