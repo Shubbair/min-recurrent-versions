@@ -4,9 +4,16 @@ using the suggested models which outperform the original models like LSTM, GRU a
 
 using min versions of (GRU,LSTM) with the power of parallel , compare it with the original models from Pytorch.
 
-original GRU model :
+Comparison :
 
 | Model | Original | Minimal |
 | --- | --- | --- |
 | GRU | ![GRU](assets/GRUV.png) | ![minGRU](assets/GRUV2.png) |
 | LSTM | ![LSTM](assets/LSTMV.png) | ![minLSTM](assets/LSTMV2.png) |
+
+see more details in code :
+[implementation details](implementation_details.ipynb)
+
+## References
+
+[Were RNN Is All We Needed](https://arxiv.org/pdf/2410.01201)
