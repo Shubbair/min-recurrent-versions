@@ -21,6 +21,8 @@ using min versions of (GRU,LSTM) with the power of parallel , compare it with th
 * use ~13-33% of GRU parameter
 * Up to 175× faster at seq length 512, and 1324× faster at seq length 4096 without cuDNN
 
+<hr/>
+
 **minLSTM**
 
 ![minLSTM](assets/LSTMV2.png)
